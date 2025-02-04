@@ -1,13 +1,10 @@
 let arr = [1,2,4,2,5];
-let j = arr.length-1;
-for(let i = 0; i<=arr.length; i++){
-    while(i>  j){
-        for(j=arr.length-1; j=i; j--){
-            if(arr[i] === arr[j]){
-                arr[j].shift();
-                console.log(arr);
-            }
-        }
+let arr2 = [];
+
+for (let i =0 ; i<= arr.length-1; i++){
+    let curr_elem  = arr[i];
+    if(!arr2.includes(curr_elem)){
+        arr2.push(curr_elem);
     }
 }
-console.log(arr);
+  console.log(arr2);
