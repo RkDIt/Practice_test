@@ -24,6 +24,7 @@ class Birds{
     #name = " ";
     #flight= " ";
     constructor(name, flight){
+
         this.#name = name;
         this.#flight = flight;
     }
