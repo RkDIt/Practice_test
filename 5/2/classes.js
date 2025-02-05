@@ -13,6 +13,13 @@ class Animal{
     }
 }
 
+const a = new Animal("dog");
+const b = new Animal("cat");
+a.speak();
+b.speak();
+ 
+// console.log(a.capital("smile")); >> cannot access the function capitalize through obj
+
 class Birds{
     #name = " ";
     #flight= " ";
@@ -38,10 +45,6 @@ const d = new Birds("Crow", "Can ");
 d.getname();
 
 
-const a = new Animal("dog");
-const b = new Animal("cat");
-a.speak();
-b.speak();
 
 
 
