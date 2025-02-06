@@ -1,4 +1,4 @@
-let str ="listed";
+let str ="listen";
 let str2="silent";
 
 
