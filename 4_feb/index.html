@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEllo World</h1>
+    
+</body>
+<script>
+//      // Enable strict mode
+
+// function test() {
+//     console.log(myVar);  // ReferenceError: Cannot access 'myVar' before initialization
+//     let myVar = 10;      // let/const are hoisted but not initialized
+// }
+
+// test();
+
+
+// const obj = {
+//     x: 1,
+//     y: 2
+// }
+function Car(name){
+    this.name = name;
+}
+
+Car.prototype.get_name = function(){
+   console.log(this.name + "Speed = 150km/hr");
+}
+
+
+const Car1 = new Car("Lexus");
+
+Car1.get_name()
+console.log(Car.__proto__)
+console.log(Car1.__proto__)
+
+
+
+</script>
+</html>
