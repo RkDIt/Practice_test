@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Entry</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="student_entry">
+        <h1>Student Entry</h1>
+        <label for="html">Enter the name of Student : <br> <br><input type="text" id="name"></label><br><br>
+        
+        <label for="html">Enter The marks ( max:100 ) <br><br>
+            <div class="num_input">
+                <input type="number" max="100" min="30" id="marks1" placeholder="English">
+                <input type="number" max="100" min="30" id="marks2" placeholder="Hindi">
+                <input type="number" max="100" min="30" id="marks3" placeholder="Maths">
+                <input type="number" max="100" min="30" id="marks4" placeholder="Science">
+                <input type="number" max="100" min="30" id="marks5" placeholder="Social Studies">
+            </div>
+        </label><br><br>
+     
+        <button onclick="Clickme()">Submit</button>
+        <button onclick="topStudent()">Top Student</button>
+    </div>
+
+    <div id="topStudentInfo" style="margin-top: 20px; font-size: 18px;"></div> <!-- Added div for displaying the top student -->
+
+    <div id="studentList" style="margin-top: 20px; font-size: 18px;">
+        <!-- List of all students will be displayed here -->
+    </div>
+</body>
+</html>
+
+
