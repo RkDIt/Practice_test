@@ -1,0 +1,133 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Header styles */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Date container */
+#date {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Input field and button styling */
+.to_do {
+    margin: 10px;
+}
+
+#info {
+    padding: 10px;
+    width: 300px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+
+#info:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* List container */
+ul#list {
+    list-style: none;
+    padding: 0;
+    width: 300px;
+    margin-top: 20px;
+}
+
+/* List item styling */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* Delete button styling */
+button.delete {
+    background-color: #e74c3c;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.delete:hover {
+    background-color: #c0392b;
+}
+
+/* When checkbox is checked, strike through text and darken the item */
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #666;  /* Make the text gray */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #ddd;  /* Make the checkbox slightly dark */
+}
+
+/* Darken the background of the list item when checked */
+input[type="checkbox"]:checked + span {
+    background-color: #f0f0f0;
+}
+
+/* Small fix for the last button alignment */
+li button {
+    margin-left: 10px;
+}
+
+/* Adding the strikethrough to the text when checkbox is checked */
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #999;
+}
